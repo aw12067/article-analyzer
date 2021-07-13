@@ -1,0 +1,1 @@
+web gunicorn article_analyzer.wsgi:application --log-file -
