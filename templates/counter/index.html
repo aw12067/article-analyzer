@@ -1,0 +1,17 @@
+{% extends "counter/base.html" %}
+
+{% block body_block %}
+
+
+<h2 style="text-align:center;margin-top: 20PX; font-family: 'Brush Script MT', cursive;">ENTER YOUR ARTICLE BELOW:</h2>
+
+<form action="{% url 'process' %}" method="POST" style="text-align: center;margin-top: 50px;">
+	 {% csrf_token %}
+	<textarea name="article" style="width:550px; height:350px; border-width: 2px;" placeholder="Enter something......."></textarea>
+  	<br>
+	<button type="submit" class="btn btn-secondary">ANALYZE</button>
+</form>
+
+{{count}}
+
+{% endblock %}

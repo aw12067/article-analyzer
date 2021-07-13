@@ -1,0 +1,19 @@
+{% extends "counter/base.html" %}
+
+{% block body_block %}
+
+
+	<div class="jumbotron" style="margin-top: 30px;">
+	  <h1 class="display-4" style="font-family: Georgia, serif;">Result!!</h1>
+	  <hr class="my-4">
+		  <ul style="font-family: Verdana, sans-serif;">
+			<li>Total number of words in the article are: {{count}}</li>
+			<li>Total number of sentences: {{sentence}}</li>
+			<li>Most occuring word is : <b><u>{{most_occurring}}</u></b> and it is repeated {{freq}} times</li>
+			<li>Number of paragraphs: {{paragraph}}</li>
+		</ul>
+	</div>
+
+	
+
+{% endblock %}
